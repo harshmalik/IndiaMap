@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.animation { opacity: 0; }
+.animation-visible { opacity: 1; transition: opacity .8s ease-out;
+ -moz-transition: opacity .8s ease-out;
+ -webkit-transition: opacity .8s ease-out;
+ -o-transition: opacity .8s ease-out;
+}
+.animation { -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 1s; animation-duration: 1s; }
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
+.animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+.animated.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+.owlFadeOut  { -webkit-animation-name : owlFadeOut  ; animation-name : owlFadeOut;}  
+.owlFadeIn  { -webkit-animation-name : owlFadeIn  ; animation-name : owlFadeIn;}  
+@-webkit-keyframes  owlFadeOut  {
+  0% { opacity : 1; }  
+  100% { opacity : 0;}  
+}
+@keyframes  owlFadeOut  {  
+	0% { opacity : 1 ;}  
+	100% {opacity : 0 ;}  
+}
+@-webkit-keyframes  owlFadeIn  {
+  0% { opacity : 0; }  
+  100% { opacity : 1;}  
+}
+@keyframes  owlFadeIn  {  
+	0% { opacity : 0 ;}  
+	100% {opacity : 1 ;}  
+}
+@keyframes example { from {
+background-color: #25578c;
+}
+to { background-color: #f94d1e; }
+}
+@-webkit-keyframes example { from {
+background-color: #25578c;
+}
+to { background-color: #f94d1e; }
+}
+@keyframes blink {  
+  0% { color: #3d3d3e; }
+  25% { color: #f26522; }
+  75% { color: #f26522; }
+  100% { color: #3d3d3e; }
+}
+@-webkit-keyframes blink {
+  0% { color: #3d3d3e; }
+ 25% { color: #f26522; }
+  75% { color: #f26522; }
+  100% { color: #3d3d3e; }
+}
+@keyframes blink1 {  
+  0% { color: #ffffff; }
+  25% { color: #f26522; }
+  75% { color: #f26522; }
+  100% { color: #ffffff; }
+}
+@-webkit-keyframes blink1 {
+  0% { color: #ffffff; }
+ 25% { color: #f26522; }
+  75% { color: #f26522; }
+  100% { color: #ffffff; }
+}
